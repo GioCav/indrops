@@ -28,8 +28,8 @@ sequencing_runs :
       - {library_name: "test_lib3", library_index: "ATAGAG"}
       - {library_name: "test_lib4", library_index: "AGAGGA"}
 paths :
-  bowtie_dir: "." 
-  bowtie_index : "Homo_sapiens.GRCh38.85.annotated"
+  bowtie_dir: "/miniconda/bin" 
+  bowtie_index : "/bowtie_indexes/Human/Homo_sapiens.GRCh38.85.annotated"
   python_dir : ""
   samtools_dir : ""
   rsem_dir : ""
