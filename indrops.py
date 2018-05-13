@@ -457,8 +457,7 @@ class IndropsProject():
         index_dir = os.path.dirname(self.paths.bowtie_index)
         check_dir(index_dir)
 
-        genome_filename = os.path.join(index_dir, '.'.join(gzipped_genome_softmasked_fasta_filename.split('.')[:-1]))
-
+        genome_filename = os.path.join(index_dir, '.'.join(gzipped_genome_softmasked_fasta_filename.split('/')[-1].split('.')[:-1]))
         gtf_filename = os.path.join(index_dir, gzipped_transcriptome_gtf.split('/')[-1])
         gtf_prefix = '.'.join(gtf_filename.split('.')[:-2])
         # gtf_with_genenames_in_transcript_id = gtf_prefix + '.annotated.gtf'
