@@ -27,10 +27,11 @@ sequencing_runs :
     libraries : 
       - {library_name: "test_lib3", library_index: "ATAGAG"}
       - {library_name: "test_lib4", library_index: "AGAGGA"}
-paths : 
-  bowtie_index : "/Users/averes/Projects/Melton/grch38_test/Homo_sapiens.GRCh38.85.annotated"
-  python_dir : "/Users/averes/miniconda3/envs/py27/bin/"
-  samtools_dir : "/Users/averes/software/samtools-1.3.1/bin/"
+paths :
+  bowtie_dir: "." 
+  bowtie_index : "Homo_sapiens.GRCh38.85.annotated"
+  python_dir : ""
+  samtools_dir : ""
   rsem_dir : ""
   java_dir : ""
 parameters : # OPTIONAL PARAMETERS
